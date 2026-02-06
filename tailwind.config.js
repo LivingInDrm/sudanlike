@@ -1,0 +1,81 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./src/renderer/**/*.{js,ts,jsx,tsx}",
+    "./src/renderer/index.html"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        gold: {
+          50: '#FFF9E6',
+          100: '#FFF0B3',
+          200: '#FFE680',
+          300: '#FFD94D',
+          400: '#FFCC1A',
+          500: '#D4AA00',
+          600: '#A68500',
+          700: '#7A6200',
+          800: '#4D3D00',
+          900: '#211A00',
+        },
+        silver: {
+          50: '#F5F5F5',
+          100: '#E0E0E0',
+          200: '#BDBDBD',
+          300: '#9E9E9E',
+          400: '#757575',
+          500: '#616161',
+          600: '#424242',
+          700: '#303030',
+          800: '#212121',
+          900: '#121212',
+        },
+        copper: {
+          50: '#FBF2E9',
+          100: '#F5DCC2',
+          200: '#EBC59B',
+          300: '#E0AE74',
+          400: '#D6974D',
+          500: '#B87333',
+          600: '#935C29',
+          700: '#6E451F',
+          800: '#4A2E14',
+          900: '#25170A',
+        },
+        stone: {
+          50: '#F2F2F2',
+          100: '#DBDBDB',
+          200: '#C4C4C4',
+          300: '#ADADAD',
+          400: '#969696',
+          500: '#808080',
+          600: '#666666',
+          700: '#4D4D4D',
+          800: '#333333',
+          900: '#1A1A1A',
+        },
+        parchment: {
+          50: '#FFFBF0',
+          100: '#FFF3D6',
+          200: '#FFE7AD',
+          300: '#FFDAB3',
+          400: '#F5CBA7',
+          500: '#DEB887',
+          600: '#C4A375',
+          700: '#A68B62',
+          800: '#7A6650',
+          900: '#4D3D32',
+        },
+      },
+      fontFamily: {
+        serif: ['Noto Serif SC', 'serif'],
+        sans: ['Noto Sans SC', 'sans-serif'],
+      },
+      backgroundImage: {
+        'parchment-texture': "url('/assets/images/parchment.png')",
+      },
+    },
+  },
+  plugins: [],
+}

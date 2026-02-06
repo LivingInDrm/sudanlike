@@ -1,0 +1,47 @@
+{
+  "scene_id": "scene_market_gossip",
+  "name": "Market Gossip",
+  "description": "The market buzzes with rumors. Perhaps you can learn something useful.",
+  "background_image": "market.png",
+  "type": "event",
+  "duration": 2,
+  "slots": [
+    { "type": "character", "required": true, "locked": false }
+  ],
+  "settlement": {
+    "type": "dice_check",
+    "narrative": "You mingle with the merchants and servants, trying to gather information.",
+    "check": {
+      "attribute": "social",
+      "calc_mode": "max",
+      "target": 6
+    },
+    "results": {
+      "success": {
+        "narrative": "The merchants speak freely. You learn valuable information about the palace intrigue.",
+        "effects": {
+          "reputation": 5,
+          "unlock_scenes": ["scene_secret_meeting"]
+        }
+      },
+      "partial_success": {
+        "narrative": "You overhear some useful tidbits, but nothing concrete.",
+        "effects": {
+          "gold": 10
+        }
+      },
+      "failure": {
+        "narrative": "The merchants are suspicious. You leave empty-handed.",
+        "effects": {}
+      },
+      "critical_failure": {
+        "narrative": "Your questions draw unwanted attention. Someone is now watching you.",
+        "effects": {
+          "reputation": -5
+        }
+      }
+    }
+  },
+  "unlock_conditions": {},
+  "absence_penalty": null
+}

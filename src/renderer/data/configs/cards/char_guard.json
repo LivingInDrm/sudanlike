@@ -1,0 +1,23 @@
+{
+  "card_id": "char_guard",
+  "name": "Palace Guard",
+  "type": "character",
+  "rarity": "copper",
+  "description": "A loyal palace guard who may help or hinder.",
+  "image": "guard.png",
+  "attributes": {
+    "physique": 7,
+    "charm": 3,
+    "wisdom": 4,
+    "combat": 8,
+    "social": 4,
+    "survival": 6,
+    "stealth": 3,
+    "magic": 1
+  },
+  "special_attributes": {
+    "support": 1
+  },
+  "tags": ["male", "guard", "palace"],
+  "equipment_slots": 2
+}

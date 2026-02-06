@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --color-gold: #D4AA00;
+  --color-gold-light: #FFE680;
+  --color-gold-dark: #7A6200;
+  --color-silver: #9E9E9E;
+  --color-copper: #B87333;
+  --color-stone: #808080;
+  --color-parchment: #DEB887;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Serif SC', serif;
+  background-color: #1A1A1A;
+  color: #F5F5F5;
+  overflow: hidden;
+}
+
+.card-gold {
+  border: 2px solid var(--color-gold);
+  background: linear-gradient(to bottom right, #FFF0B3, #FFD94D);
+}
+
+.card-silver {
+  border: 2px solid var(--color-silver);
+  background: linear-gradient(to bottom right, #E0E0E0, #9E9E9E);
+}
+
+.card-copper {
+  border: 2px solid var(--color-copper);
+  background: linear-gradient(to bottom right, #F5DCC2, #D6974D);
+}
+
+.card-stone {
+  border: 2px solid var(--color-stone);
+  background: linear-gradient(to bottom right, #DBDBDB, #969696);
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-gold);
+  color: black;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gold-light);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  padding: 0.5rem 1rem;
+  background-color: #424242;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #616161;
+}
+
+.slot-empty {
+  border: 2px dashed #A68B62;
+  background-color: rgba(77, 61, 50, 0.3);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot-filled {
+  border: 2px solid #C4A375;
+  background-color: rgba(122, 102, 80, 0.5);
+  border-radius: 0.5rem;
+}
+
+.slot-required {
+  border-color: #EF4444 !important;
+}
+
+.slot-locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.glow-gold {
+  box-shadow: 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+}

@@ -1,0 +1,17 @@
+{
+  "card_id": "equip_dagger",
+  "name": "Hidden Dagger",
+  "type": "equipment",
+  "rarity": "copper",
+  "description": "A concealed weapon for emergencies.",
+  "image": "dagger.png",
+  "equipment_type": "weapon",
+  "attribute_bonus": {
+    "combat": 3,
+    "stealth": 2
+  },
+  "special_bonus": {
+    "reroll": 1
+  },
+  "gem_slots": 1
+}

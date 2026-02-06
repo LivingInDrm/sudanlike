@@ -1,0 +1,19 @@
+{
+  "scene_id": "scene_weapon_merchant",
+  "name": "Weapon Merchant",
+  "description": "A trusted merchant who deals in weapons and armor.",
+  "background_image": "weapon_shop.png",
+  "type": "shop",
+  "duration": 1,
+  "slots": [],
+  "settlement": {
+    "type": "trade",
+    "shop_inventory": ["equip_dagger", "equip_sword", "equip_armor"],
+    "allow_sell": true,
+    "refresh_cycle": 7
+  },
+  "unlock_conditions": {
+    "reputation_min": 30
+  },
+  "absence_penalty": null
+}

@@ -1,0 +1,24 @@
+{
+  "card_id": "char_protagonist",
+  "name": "Ahmad",
+  "type": "character",
+  "rarity": "gold",
+  "description": "The protagonist, a loyal servant determined to save the Sultan.",
+  "image": "protagonist.png",
+  "attributes": {
+    "physique": 6,
+    "charm": 7,
+    "wisdom": 8,
+    "combat": 5,
+    "social": 9,
+    "survival": 6,
+    "stealth": 5,
+    "magic": 2
+  },
+  "special_attributes": {
+    "support": 2,
+    "reroll": 1
+  },
+  "tags": ["protagonist", "male", "noble"],
+  "equipment_slots": 4
+}
